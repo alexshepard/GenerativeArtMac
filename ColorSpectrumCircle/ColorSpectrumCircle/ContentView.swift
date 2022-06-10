@@ -28,14 +28,15 @@ struct ContentView: View {
             .padding()
             
             Canvas { context, size in
+                let radius = (size.width / 2) - 20
                 let angleStep = 360 / segmentCount
                 let center = CGPoint(x: size.width/2, y: size.height / 2)
                 for angle in stride(from: 0, through: 360, by: angleStep) {
-                    let vx = (600/2) + cos(Angle(degrees: Double(angle)).radians) * radius
-                    let vy = (600/2) + sin(Angle(degrees: Double(angle)).radians) * radius
+                    let vx = (size.width/2) + cos(Angle(degrees: Double(angle)).radians) * radius
+                    let vy = (size.height/2) + sin(Angle(degrees: Double(angle)).radians) * radius
                     
-                    let vx2 = (600/2) + cos(Angle(degrees: Double(angle+angleStep)).radians) * radius
-                    let vy2 = (600/2) + sin(Angle(degrees: Double(angle+angleStep)).radians) * radius
+                    let vx2 = (size.width/2) + cos(Angle(degrees: Double(angle+angleStep)).radians) * radius
+                    let vy2 = (size.height/2) + sin(Angle(degrees: Double(angle+angleStep)).radians) * radius
                     
                     let fillColor = Color(hue: Double(angle)/360.0, saturation: saturation, brightness: brightness)
                     
@@ -49,7 +50,7 @@ struct ContentView: View {
                     )
                 }
             }
-            .frame(width: 600, height: 600)
+            .frame(maxWidth: 600, maxHeight: 600)
             .gesture(
                 DragGesture()
                     .onChanged {
