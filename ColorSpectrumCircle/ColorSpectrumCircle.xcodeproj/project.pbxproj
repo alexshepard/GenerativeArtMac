@@ -11,6 +11,7 @@
 		FA7EF7C62852EDD200561B2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EF7C52852EDD200561B2F /* ContentView.swift */; };
 		FA7EF7C82852EDD200561B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7EF7C72852EDD200561B2F /* Assets.xcassets */; };
 		FA7EF7CC2852EDD200561B2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7EF7CB2852EDD200561B2F /* Preview Assets.xcassets */; };
+		FAC8BA06285314D000EE67B0 /* ColorSpectrumCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8BA05285314D000EE67B0 /* ColorSpectrumCircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		FA7EF7C72852EDD200561B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA7EF7C92852EDD200561B2F /* ColorSpectrumCircle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColorSpectrumCircle.entitlements; sourceTree = "<group>"; };
 		FA7EF7CB2852EDD200561B2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAC8BA05285314D000EE67B0 /* ColorSpectrumCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSpectrumCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				FA7EF7C32852EDD200561B2F /* ColorSpectrumCircleApp.swift */,
 				FA7EF7C52852EDD200561B2F /* ContentView.swift */,
+				FAC8BA05285314D000EE67B0 /* ColorSpectrumCircleView.swift */,
 				FA7EF7C72852EDD200561B2F /* Assets.xcassets */,
 				FA7EF7C92852EDD200561B2F /* ColorSpectrumCircle.entitlements */,
 				FA7EF7CA2852EDD200561B2F /* Preview Content */,
@@ -141,6 +144,7 @@
 			files = (
 				FA7EF7C62852EDD200561B2F /* ContentView.swift in Sources */,
 				FA7EF7C42852EDD200561B2F /* ColorSpectrumCircleApp.swift in Sources */,
+				FAC8BA06285314D000EE67B0 /* ColorSpectrumCircleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
