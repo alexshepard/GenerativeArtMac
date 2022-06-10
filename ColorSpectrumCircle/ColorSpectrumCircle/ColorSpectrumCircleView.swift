@@ -40,14 +40,22 @@ struct ColorSpectrumCircleView: View {
                     
                     let fillColor = Color(hue: Double(angle)/360.0, saturation: saturation, brightness: brightness)
                     
+                    let p = Path { path in
+                        path.move(to: center)
+                        path.addLine(to: CGPoint(x: vx, y: vy))
+                        path.addLine(to: CGPoint(x: vx2, y: vy2))
+                    }
+
+                    // fill and stroke otherwise there's a gap
                     context.fill(
-                        Path { path in
-                            path.move(to: center)
-                            path.addLine(to: CGPoint(x: vx, y: vy))
-                            path.addLine(to: CGPoint(x: vx2, y: vy2))
-                        },
+                        p,
                         with: .color(fillColor)
                     )
+                    context.stroke(
+                        p,
+                        with: .color(fillColor)
+                    )
+
                 }
             }
             .frame(maxWidth: 600, maxHeight: 600)
